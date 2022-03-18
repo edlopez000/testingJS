@@ -1,4 +1,10 @@
 {
   "name": "testJS",
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.0",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }
