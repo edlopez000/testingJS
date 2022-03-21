@@ -2,9 +2,13 @@
   "name": "testJS",
   "packageManager": "yarn@3.2.0",
   "devDependencies": {
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "prisma": "3.11.0"
   },
   "scripts": {
     "test": "jest"
+  },
+  "dependencies": {
+    "@prisma/client": "3.11.0"
   }
 }

@@ -33,7 +33,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["jest", "virtual:79c5493dbbfaac5c7a40e833a8939231d83489e34cc0f183e663663634f38b6e477be09a1df19db6b58f15d88a838d435d20beaa6c7d92cad8a58bd7e4931d46#npm:27.5.1"]\
+            ["@prisma/client", "virtual:79c5493dbbfaac5c7a40e833a8939231d83489e34cc0f183e663663634f38b6e477be09a1df19db6b58f15d88a838d435d20beaa6c7d92cad8a58bd7e4931d46#npm:3.11.0"],\
+            ["jest", "virtual:79c5493dbbfaac5c7a40e833a8939231d83489e34cc0f183e663663634f38b6e477be09a1df19db6b58f15d88a838d435d20beaa6c7d92cad8a58bd7e4931d46#npm:27.5.1"],\
+            ["prisma", "npm:3.11.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1104,6 +1106,47 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@npmcli/move-file", "npm:1.1.2"],\
             ["mkdirp", "npm:1.0.4"],\
             ["rimraf", "npm:3.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@prisma/client", [\
+        ["npm:3.11.0", {\
+          "packageLocation": "./.yarn/unplugged/@prisma-client-virtual-81e1100308/node_modules/@prisma/client/",\
+          "packageDependencies": [\
+            ["@prisma/client", "npm:3.11.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:79c5493dbbfaac5c7a40e833a8939231d83489e34cc0f183e663663634f38b6e477be09a1df19db6b58f15d88a838d435d20beaa6c7d92cad8a58bd7e4931d46#npm:3.11.0", {\
+          "packageLocation": "./.yarn/unplugged/@prisma-client-virtual-81e1100308/node_modules/@prisma/client/",\
+          "packageDependencies": [\
+            ["@prisma/client", "virtual:79c5493dbbfaac5c7a40e833a8939231d83489e34cc0f183e663663634f38b6e477be09a1df19db6b58f15d88a838d435d20beaa6c7d92cad8a58bd7e4931d46#npm:3.11.0"],\
+            ["@prisma/engines-version", "npm:3.11.0-48.b371888aaf8f51357c7457d836b86d12da91658b"],\
+            ["@types/prisma", null],\
+            ["prisma", "npm:3.11.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/prisma",\
+            "prisma"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@prisma/engines", [\
+        ["npm:3.11.0-48.b371888aaf8f51357c7457d836b86d12da91658b", {\
+          "packageLocation": "./.yarn/unplugged/@prisma-engines-npm-3.11.0-48.b371888aaf8f51357c7457d836b86d12da91658b-e90add985c/node_modules/@prisma/engines/",\
+          "packageDependencies": [\
+            ["@prisma/engines", "npm:3.11.0-48.b371888aaf8f51357c7457d836b86d12da91658b"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@prisma/engines-version", [\
+        ["npm:3.11.0-48.b371888aaf8f51357c7457d836b86d12da91658b", {\
+          "packageLocation": "./.yarn/cache/@prisma-engines-version-npm-3.11.0-48.b371888aaf8f51357c7457d836b86d12da91658b-07be32c9d2-c3200d2000.zip/node_modules/@prisma/engines-version/",\
+          "packageDependencies": [\
+            ["@prisma/engines-version", "npm:3.11.0-48.b371888aaf8f51357c7457d836b86d12da91658b"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3996,6 +4039,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["prisma", [\
+        ["npm:3.11.0", {\
+          "packageLocation": "./.yarn/unplugged/prisma-npm-3.11.0-9503d10b10/node_modules/prisma/",\
+          "packageDependencies": [\
+            ["prisma", "npm:3.11.0"],\
+            ["@prisma/engines", "npm:3.11.0-48.b371888aaf8f51357c7457d836b86d12da91658b"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["promise-inflight", [\
         ["npm:1.0.1", {\
           "packageLocation": "./.yarn/cache/promise-inflight-npm-1.0.1-5bb925afac-2274948309.zip/node_modules/promise-inflight/",\
@@ -4517,7 +4570,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["testJS", "workspace:."],\
-            ["jest", "virtual:79c5493dbbfaac5c7a40e833a8939231d83489e34cc0f183e663663634f38b6e477be09a1df19db6b58f15d88a838d435d20beaa6c7d92cad8a58bd7e4931d46#npm:27.5.1"]\
+            ["@prisma/client", "virtual:79c5493dbbfaac5c7a40e833a8939231d83489e34cc0f183e663663634f38b6e477be09a1df19db6b58f15d88a838d435d20beaa6c7d92cad8a58bd7e4931d46#npm:3.11.0"],\
+            ["jest", "virtual:79c5493dbbfaac5c7a40e833a8939231d83489e34cc0f183e663663634f38b6e477be09a1df19db6b58f15d88a838d435d20beaa6c7d92cad8a58bd7e4931d46#npm:27.5.1"],\
+            ["prisma", "npm:3.11.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
