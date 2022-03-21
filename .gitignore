@@ -1,2 +1,3 @@
 testDB-ca-certificate.cer
 node_modules/
+.env
