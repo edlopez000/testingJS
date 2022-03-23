@@ -3,6 +3,8 @@ const { PrismaClient } = require("@prisma/client");
 
 const prisma = new PrismaClient();
 
+// Truly horrible, this should all be in the index.js or even the cart.js
+
 test("The addToCart function can add an item to the cart", async () => {
   // Creates a new Cart
   const cart = await prisma.cart.create({ data: { username: "Test1" } });
