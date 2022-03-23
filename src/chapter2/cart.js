@@ -1,9 +1,19 @@
+const { PrismaClient } = require("@prisma/client");
+
+const prisma = new PrismaClient();
+
 class Cart {
-  constructor() {
+  constructor(name) {
+    this.name = name;
     this.items = [];
+    prisma.cart.create({ username: this.name });
   }
 
   addToCart(item) {
+    prisma.cart.update({
+      where: { username: this.name },
+      data: { Carts_Items: { item: item } },
+    });
     this.items.push(item);
   }
 
@@ -16,8 +26,11 @@ class Cart {
     }
   }
 
-  printCart() {
-    console.log(`${this.items}`);
+  printCart(name) {
+    const currentCart = prisma.cart.findUnique({
+      where: { username: this.name },
+    });
+    console.log(`${currentCart}`);
   }
 }
 
