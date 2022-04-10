@@ -15,10 +15,6 @@ class Cart {
       }
     }
   }
-
-  printCart() {
-    console.log(`${this.items}`);
-  }
 }
 
 module.exports = Cart;

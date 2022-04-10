@@ -14,12 +14,3 @@ test("The removeFromCart function can remove an item from the cart", () => {
   cart.removeFromCart("cheesecake");
   expect(cart.items).toEqual([]);
 });
-
-test("The printCart function prints the items in the cart", () => {
-  const consoleSpy = jest.spyOn(console, "log");
-  const cart = new Cart();
-  cart.addToCart("cheesecake");
-  cart.addToCart("pie");
-  cart.printCart();
-  expect(consoleSpy).toHaveBeenCalledWith("cheesecake,pie");
-});
