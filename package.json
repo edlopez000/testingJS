@@ -6,5 +6,9 @@
   },
   "scripts": {
     "test": "jest"
+  },
+  "dependencies": {
+    "knew": "^0.0.0",
+    "sqlite3": "^5.0.2"
   }
 }
