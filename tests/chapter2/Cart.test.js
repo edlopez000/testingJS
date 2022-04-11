@@ -1,16 +1,14 @@
-const Cart = require("../../src/chapter2/Cart");
+const { db, closeConnection } = require("../../dbConnection");
+const { createCart } = require("../../src/chapter2/cart");
 
-// cart.addToCart("pepper");
-
-test("The addToCart function can add an item to the cart", () => {
-  const cart = new Cart();
-  cart.addToCart("cheesecake");
-  expect(cart.items).toEqual(["cheesecake"]);
-});
-
-test("The removeFromCart function can remove an item from the cart", () => {
-  const cart = new Cart();
-  cart.addToCart("cheesecake");
-  cart.removeFromCart("cheesecake");
-  expect(cart.items).toEqual([]);
+test("createCart creates a cart for a username", async () => {
+  await db("carts").truncate(); //deletes the contents of the tables
+  await createCart("Lucas da Costa");
+  await createCart("John Lonergan");
+  const result = await db.select("username").from("carts");
+  expect(result).toEqual([
+    { username: "Lucas da Costa" },
+    { username: "John Lonergan" },
+  ]);
+  await closeConnection();
 });
