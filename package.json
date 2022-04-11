@@ -8,7 +8,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "knew": "^0.0.0",
+    "@vscode/sqlite3": "^5.0.8",
+    "knex": "^1.0.5",
     "sqlite3": "^5.0.2"
   }
 }
